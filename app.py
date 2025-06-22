@@ -1,6 +1,12 @@
 from flask import Flask, render_template, request, jsonify
 from flask_socketio import SocketIO
 from models.report_model import insert_report
+import webbrowser
+import threading
+
+def open_browser():
+    webbrowser.open_new("http://127.0.0.1:5000")
+
 
 app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
@@ -33,4 +39,5 @@ def report():
         return jsonify({"error": "Failed to insert report"}), 500
 
 if __name__ == '__main__':
+    threading.Timer(1.5, open_browser).start()
     socketio.run(app, debug=True)
