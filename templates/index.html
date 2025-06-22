@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Haiti Alert System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="report">
+      <h1>Report Incident</h1>
+      <form class="reportForm" id="reportForm">
+        <label for="location">Location</label>
+        <input name="location" placeholder="where did it happen" required><br>
+        <label for="type">Type</label>
+        <input name="type" placeholder="what happened" required><br>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="describe the event..." required></textarea><br>
+        <button id="submit_button" type="submit">SUBMIT</button>
+      </form>
+    </div>
+    <div class="live">
+      <h2>Live Feed</h2>
+      <ul id="feed"></ul>
+    </div>
+  </div>
+</body>
+</html>

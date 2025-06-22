@@ -1,0 +1,74 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.reportForm {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.reportForm label {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.reportForm input {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: solid 1px dodgerblue;
+    outline: none;
+}
+
+.reportForm input:focus {
+    border: solid 2px dodgerblue;
+}
+
+#message {
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: solid 1px dodgerblue;
+    outline: none;
+    font-family: 'Trebuchet MS', sans-serif !important;
+    height: 60px;
+}
+
+#submit_button {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 300;
+    height: 30px;
+    transition: 0.2s;
+}
+
+#submit_button:hover {
+    background-color: white;
+    color: dodgerblue;
+    border: solid 1px dodgerblue;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+li {
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
