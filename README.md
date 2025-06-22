@@ -1,5 +1,8 @@
 # Sekirite
 
+## Installation
+Make sure your python version is up-to-date. Run 'pip install' with all the packages present in requirements.txt. Then 'cd' into the project folder and run 'python app.py' to run the program.
+
 ## Inspiration
 Haiti faces an extreme case of gang violence. Just last year, over 5000 people died from the chaos. One reason for these deaths is that people aren't informed of suspicious activity beforehand. Haiti doesn't have access to apps like Citizen.
 
